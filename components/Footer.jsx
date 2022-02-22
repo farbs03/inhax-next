@@ -41,7 +41,7 @@ const Footer = () => {
             <div className='justify-center flex flex-col items-center'>
                 <motion.div variants={textVariant}>
                     <p className='font-bold text-lg font-mono mb-1'><span className='text-primary font-bold text-xl'>$ </span>indiana hax 2021<span style={{visibility: beep ? 'visible' :'hidden', color : "#f89e9b"}}>_</span></p>
-                    <p className="text-xs text-center font-semibold"><span className='text-primary'>// </span>All Rights Reserved</p>
+                    <p className="text-xs text-center font-semibold"><span className='text-primary'>{'//'}</span>All Rights Reserved</p>
                 </motion.div>
 
                 <motion.div className='flex items-center text-sm gap-4 mt-2'>

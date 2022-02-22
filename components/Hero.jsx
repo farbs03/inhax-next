@@ -32,11 +32,11 @@ const Hero = () => {
                 <div className='text-center mb-20 md:mb-12'>
                     
                     <motion.div variants={textVariant} className='mb-2 font-mono font-bold'>
-                        <p className='text-4xl'>  <span className='text-primary'>$</span> indiana hax<span style={{visibility: beep ? 'visible' :'hidden', color : "#f89e9b"}}>_</span></p>
+                        <p className='text-4xl'><span className='text-primary'>$</span> indiana hax<span style={{visibility: beep ? 'visible' :'hidden', color : "#f89e9b"}}>_</span></p>
                     </motion.div>
 
                     <motion.div variants={textVariant}>
-                        <p className='font-semibold text-lg'><span className='text-primary'>//</span> Hosting Hackathons for High School Students, Based in Indiana</p>
+                        <p className='font-semibold text-lg'><span className='text-primary'>{'//'}</span> Hosting Hackathons for High School Students, Based in Indiana</p>
                     </motion.div>
 
                     
