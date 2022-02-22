@@ -1,27 +1,7 @@
 import React, {useState, useEffect} from 'react'
-
-import {Button, Typography, Tooltip, message} from 'antd'
-
-import logo from "../public/logo.png"
-
 import {motion} from "framer-motion"
 import { MailIcon } from '@heroicons/react/solid'
-
-const {Text, Title} = Typography
-
-let textVariant = {
-    visible:{
-        opacity: 1,
-        transition: {
-            duration: 0.5
-        }
-    },
-    hidden:{
-        opacity: 0,
-
-    }
-    
-}
+import {containerVariant, textVariant} from "../utils/variants"
 
 const Footer = () => {
 

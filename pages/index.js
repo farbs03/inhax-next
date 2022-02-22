@@ -1,7 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
-import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Events from "../components/Events"
 import Mission from '../components/Mission'

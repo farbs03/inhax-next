@@ -64,7 +64,7 @@ const Events = () => {
                                         <div>
 
                                             <div className='w-[100px] h-[100px]'>
-                                                <Image src={event.image} width={100} height={100}  />
+                                                <Image alt={event.title} src={event.image} width={100} height={100}  />
                                             </div>
                                             
                                         </div>

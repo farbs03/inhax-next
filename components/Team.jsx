@@ -94,7 +94,7 @@ const Team = () => {
                                 variants={teamVariant} 
                                 whileHover={{scale: 1.02, transition: {duration:'0.2'}}}  
                             >
-                                <Image src={sponsor.src} width={200} height={sponsor.height} />
+                                <Image alt="sponsor" src={sponsor.src} width={200} height={sponsor.height} />
                             </motion.div>
                         ))}      
 
@@ -135,7 +135,7 @@ const Team = () => {
                                     className='w-[180px] h-[180px] shadow-lg shadow-primary/40 rounded-2xl'
                                     whileHover={{scale: 1.02, transition: {duration:'0.2'}}}
                                 >
-                                    <Image src={person.Image} width={180} height={180} className='rounded-2xl' />
+                                    <Image alt={person.Name} src={person.Image} width={180} height={180} className='rounded-2xl' />
                                 </motion.div>
                                 <p className='font-semibold text-lg mt-3'>{person.Name}</p>
                                 <p className='font-semibold text-primary text-sm mb-1'>{person.Role}</p>

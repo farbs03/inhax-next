@@ -52,11 +52,11 @@ const Hero = () => {
                         transition={{delay: 0.8, duration: 0.8, type: "spring"}}
                         className='w-fit overflow-y-hidden'
                     >
-                            <Image src={backdrop} layout='intrinsic' />
+                            <Image alt="backdrop" src={backdrop} layout='intrinsic' />
                     </motion.div>
 
                     <div className='absolute bottom-1 w-full' style={{filter: "drop-shadow(0px -15px 10px rgba(248, 158, 155, 0.2)"}}>
-                        <Image src={squiggle} layout='responsive' />
+                        <Image alt="squiggle" src={squiggle} layout='responsive' />
                     </div>
                     <div className="absolute bottom-0 h-1 bg-white w-full"></div>
 

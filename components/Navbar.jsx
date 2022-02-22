@@ -32,7 +32,11 @@ const Navbar = () => {
     return(
         <div className='flex justify-between px-6 py-3 items-center w-full'>
             
-            <a href="/"><Image src="/logo.png" width={60} height={60} /></a>
+            <Link href="/">
+                <a>
+                    <Image src="/logo.png" alt="logo" width={60} height={60} />
+                </a>
+            </Link>
              
             <div className="block md:hidden">
                 <button  onClick={() => setNavV(true)}>
