@@ -34,7 +34,7 @@ const Faq = () => {
             <p className='font-bold text-3xl text-center mb-8'>FAQ</p>
             <div className='max-w-xl w-full mx-auto divide-y divide-gray-200'>
                 {questions.map((question, idx) => (
-                    <Disclosure key={idx}>
+                    <Disclosure key={question.question}>
                         {({ open }) => (
                             <div className='p-4'>
                                 <Disclosure.Button className={`flex justify-between w-full py-2 font-medium text-left transition duration-200 ease-in bg-transparent hover:text-primary focus:outline-none`}>

@@ -53,6 +53,7 @@ const Events = () => {
                     {eventList.map((event) => (
                             <motion.div 
                                 variants={eventVariant}
+                                key={event.title}
                             >
                                 <Link href={event.href}>
                                     <motion.div
@@ -77,7 +78,7 @@ const Events = () => {
                                             
                                             <div className='flex mb-1'>
                                                 {event.tags.map((tag) => (
-                                                    <div className={tag.style}>{tag.title}</div>
+                                                    <div key={tag.title} className={tag.style}>{tag.title}</div>
                                                 ))}
                                             </div>
 

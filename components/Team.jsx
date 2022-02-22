@@ -88,8 +88,9 @@ const Team = () => {
 
                     <div className='grid md:grid-cols-4 gap-10 items-center mt-6'>
                         
-                        {sponsors.map((sponsor) => (
-                            <motion.div 
+                        {sponsors.map((sponsor, idx) => (
+                            <motion.div
+                                key={idx}
                                 variants={teamVariant} 
                                 whileHover={{scale: 1.02, transition: {duration:'0.2'}}}  
                             >
@@ -125,7 +126,8 @@ const Team = () => {
                     <div className='flex-shrink-0 mx-auto mt-6 flex flex-wrap justify-center max-w-[1000px]'>
 
                         {teamMembers.map((person) => (
-                            <motion.div 
+                            <motion.div
+                                key={person.Name}
                                 variants={teamVariant}  
                                 className='relative m-5 flex flex-col w-[200px]'
                             >

@@ -30,9 +30,9 @@ const Navbar = () => {
     const [navV, setNavV] = useState(false)
 
     return(
-        <div style={{width: '100%',background: "#fefefe", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "12px 24px"}}>
+        <div className='flex justify-between px-6 py-3 items-center w-full'>
             
-            <Link href="/" className='cursor-pointer'><Image src="/logo.png" width={60} height={60} /></Link>
+            <a href="/"><Image src="/logo.png" width={60} height={60} /></a>
              
             <div className="block md:hidden">
                 <button  onClick={() => setNavV(true)}>
@@ -45,8 +45,8 @@ const Navbar = () => {
                     <div className="flex flex-col gap-4">
 
                         {links.map((link) => (
-                            <p>
-                                <a 
+                            <p key={link.title}>
+                                <a
                                     onClick={() =>{
                                         document.getElementById(link.id).scrollIntoView({behavior: 'smooth'})
                                         setNavV(false)
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-4">
 
                     {links.map((link) => (
-                        <motion.div whileHover={{y: 2}}>
+                        <motion.div key={link.id} whileHover={{y: 2}}>
                             <a 
                                 onClick={() => {
                                     document.getElementById(link.id).scrollIntoView({behavior: 'smooth'})
