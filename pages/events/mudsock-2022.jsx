@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-import {Timeline} from 'antd'
-
 import { motion } from 'framer-motion'
 
 import WinterHax from "../../public/winter-hax.png"

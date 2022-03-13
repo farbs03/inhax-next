@@ -11,8 +11,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='max-w-7xl p-4 mx-auto w-full overflow-x-hidden min-h-screen'>
-        <Component {...pageProps} />
+      <main className='overflow-x-hidden min-h-screen dark:bg-gray-900 dark:text-white'>
+        <div className='max-w-7xl p-4 mx-auto w-full'>
+          <Component {...pageProps} />
+        </div>
       </main>
 
       <Footer />

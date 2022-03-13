@@ -37,16 +37,16 @@ const Footer = () => {
     ]
 
     return (
-        <div className='p-4 bg-gray-100'>
+        <div className='p-4 bg-gray-100 dark:bg-gray-800 dark:text-white'>
             <div className='justify-center flex flex-col items-center'>
                 <motion.div variants={textVariant}>
                     <p className='font-bold text-lg font-mono mb-1'><span className='text-primary font-bold text-xl'>$ </span>indiana hax 2021<span style={{visibility: beep ? 'visible' :'hidden', color : "#f89e9b"}}>_</span></p>
-                    <p className="text-xs text-center font-semibold"><span className='text-primary'>{'//'}</span>All Rights Reserved</p>
+                    <p className="text-xs text-center font-semibold"><span className='text-primary'>{'// '}</span>All Rights Reserved</p>
                 </motion.div>
 
                 <motion.div className='flex items-center text-sm gap-4 mt-2'>
                     {links.map((link) => (
-                        <a key={link.href} href={link.href} className='flex items-center gap-2 text-gray-400 hover:text-gray-500 transition duration-200 ease-in'>
+                        <a key={link.href} href={link.href} className='flex items-center gap-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 transition duration-200 ease-in'>
                             <div className='w-5 h-5' >
                                 {link.icon}
                             </div>

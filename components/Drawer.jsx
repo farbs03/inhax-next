@@ -29,10 +29,10 @@ const Drawer = ({open, onClose, children}) => {
                             leaveTo="translate-x-full"
                         >
                             <div className="relative w-screen max-w-[18rem]">
-                                <div className="h-full flex flex-col py-6 overflow-x-hidden bg-white shadow-xl overflow-y-scroll">
+                                <div className="h-full flex flex-col py-6 overflow-x-hidden bg-white dark:bg-gray-800 dark:text-white shadow-xl overflow-y-scroll">
                                     <button
                                         type="button"
-                                        className="rounded-md ml-4 text-gray-600  hover:text-gray-500 focus:outline-none transition duration-200 ease-in"
+                                        className="rounded-md ml-4 text-gray-500  hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none transition duration-200 ease-in"
                                         onClick={onClose}
                                     >
                                         <XIcon className="h-6 w-6" aria-hidden="true" />

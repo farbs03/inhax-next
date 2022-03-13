@@ -30,9 +30,9 @@ const Faq = () => {
     ]
 
     return (
-        <div className='my-20'>
+        <div id='about' className='my-20'>
             <p className='font-bold text-3xl text-center mb-8'>FAQ</p>
-            <div className='max-w-xl w-full mx-auto divide-y divide-gray-200'>
+            <div className='max-w-xl w-full mx-auto divide-y divide-gray-200 dark:divide-gray-700'>
                 {questions.map((question, idx) => (
                     <Disclosure key={question.question}>
                         {({ open }) => (

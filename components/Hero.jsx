@@ -21,7 +21,7 @@ const Hero = () => {
 
 
     return(
-        <div className="h-screen overflow-y-hidden">
+        <div className="h-screen overflow-y-hidden mb-20">
             <Navbar />
             <motion.div 
                 variants={containerVariant} 
@@ -36,29 +36,27 @@ const Hero = () => {
                     </motion.div>
 
                     <motion.div variants={textVariant}>
-                        <p className='font-semibold text-lg'><span className='text-primary'>{'//'}</span> Hosting Hackathons for High School Students, Based in Indiana</p>
-                    </motion.div>
-
-                    
-                    <motion.div variants={textVariant} style={{marginTop: "20px"}}>
+                        <p className='font-semibold text-lg'><span className='text-primary'>{'// '}</span> Hosting Hackathons for High School Students, Based in Indiana</p>
                     </motion.div>
 
                 </div>
 
                 <motion.div variants={containerVariant} className='relative overflow-y-hidden'>
                     <motion.div
-                        initial={{y: 500}}
+                        initial={{y: '20vh'}}
                         animate={{y: 0}}
-                        transition={{delay: 0.8, duration: 0.8, type: "spring"}}
+                        transition={{delay: 0.6, duration: 0.8, type: "spring"}}
                         className='w-fit overflow-y-hidden'
                     >
-                            <Image alt="backdrop" src={backdrop} layout='intrinsic' />
+                            <Image alt="backdrop" src={backdrop} layout='intrinsic' className='dark:invert' />
                     </motion.div>
 
                     <div className='absolute bottom-1 w-full' style={{filter: "drop-shadow(0px -15px 10px rgba(248, 158, 155, 0.2)"}}>
-                        <Image alt="squiggle" src={squiggle} layout='responsive' />
+                        <svg viewBox="0 0 1152 146" fill="none" xmlns="http://www.w3.org/2000/svg" className='fill-white dark:fill-gray-900 w-full'>
+                            <path d="M285.876 45.843C156.432 45.843 44.6473 97.3333 0 146H1152V73V0C1111.85 45.5108 980.774 135.038 749.675 129.058C518.575 123.078 496.784 45.843 285.876 45.843Z" />
+                        </svg>
                     </div>
-                    <div className="absolute bottom-0 h-1 bg-white w-full"></div>
+                    <div className="absolute bottom-0 h-1 bg-white dark:bg-gray-900 w-full"></div>
 
                 </motion.div>
             </motion.div>

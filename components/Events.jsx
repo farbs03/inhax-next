@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
-import {Typography, Tag} from 'antd'
-
 import { motion } from 'framer-motion'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
-const {Text, Title} = Typography
 import {containerVariant, textVariant, eventVariant } from "../utils/variants"
 
 const Events = () => {
@@ -21,7 +18,7 @@ const Events = () => {
             tags: [
                 {
                     title: "Event Closed",
-                    style: "px-2 py-1 text-xs bg-red-100 text-red-500 w-fit rounded"
+                    style: "px-2 py-1 text-xs bg-red-100 dark:bg-red-900 dark:bg-opacity-20 font-semibold text-red-500 w-fit rounded"
                 }
             ],
             description: "Join us in our first hackathon, scheduled for January 14, 2022! Participate in a week long contest, where you create a unique project and complete challenging problems!"
@@ -57,8 +54,8 @@ const Events = () => {
                             >
                                 <Link href={event.href}>
                                     <motion.div
-                                        whileHover={{x: 7}}
-                                        className='max-w-3xl w-full cursor-pointer flex items-center p-6 justify-center mx-auto my-2 shadow-lg shadow-primary/20 rounded-2xl'
+                                        whileHover={{x: 8}}
+                                        className='max-w-3xl w-full cursor-pointer flex items-center p-6 justify-center mx-auto my-2 shadow-xl shadow-primary/20 rounded-2xl'
                                     > 
 
                                         <div>
